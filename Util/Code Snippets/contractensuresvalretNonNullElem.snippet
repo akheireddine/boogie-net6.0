@@ -5,9 +5,9 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>Contract.Ensures(cce.NonNullElements(Contract.ValueAtReturn(...)))</Title>
+      <Title>Contract.Ensures(Cce.NonNullElements(Contract.ValueAtReturn(...)))</Title>
       <Shortcut>cernn</Shortcut>
-      <Description>Emits a 'Contract.Ensures' cce.non-nullelements out parameter clause</Description>
+      <Description>Emits a 'Contract.Ensures' Cce.non-nullelements out parameter clause</Description>
       <Author>tabarbe</Author>
     </Header>
     <Snippet>
@@ -25,7 +25,7 @@
           </Function>
         </Object>
       </Declarations>
-      <Code Language="CSharp" Kind="method body"><![CDATA[Contract.Ensures(cce.NonNullElements(Contract.ValueAtReturn(out $value$)));$end$]]></Code>
+      <Code Language="CSharp" Kind="method body"><![CDATA[Contract.Ensures(Cce.NonNullElements(Contract.ValueAtReturn(out $value$)));$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

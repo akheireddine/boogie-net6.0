@@ -16,7 +16,7 @@ public static class ManualSplitFinder {
 
   private static List<ManualSplit /*!*/> FindManualSplits(Program program, ManualSplit initialSplit) {
     Contract.Requires(initialSplit.Implementation != null);
-    Contract.Ensures(Contract.Result<List<Split>>() == null || cce.NonNullElements(Contract.Result<List<Split>>()));
+    Contract.Ensures(Contract.Result<List<Split>>() == null || Cce.NonNullElements(Contract.Result<List<Split>>()));
 
     var splitOnEveryAssert = initialSplit.Options.VcsSplitOnEveryAssert;
     initialSplit.Run.Implementation.CheckBooleanAttribute("vcs_split_on_every_assert", ref splitOnEveryAssert);
